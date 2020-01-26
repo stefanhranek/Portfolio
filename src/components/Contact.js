@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
-import './../styles/Contact.scss';
+import './../styles/App.scss';
 
 export default class Contact extends Component {
     render() {

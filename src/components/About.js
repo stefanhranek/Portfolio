@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
-import './../styles/About.scss';
+import './../styles/App.scss';
 
 export default class About extends Component {
     render() {
         return (
             <div className="aboutContainer">
-                <h1>This is the About Section.</h1>
+                <header>Hello.</header>
+                <p>
+                    I'm a web developer based in San Diego, CA. I have a passion for bringing ideas to life, and especially love creating web & mobile applications.
+                </p>
             </div>
         )
     }

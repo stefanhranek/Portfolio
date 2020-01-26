@@ -1,0 +1,15 @@
+@mixin flexContainer($color, $direction, $height, $width) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $color;
+    flex-direction: $direction;
+    height: $height;
+    width: $width;
+}
+
+@mixin middleP() {
+    width: 40vw;
+    letter-spacing: 1.5px;
+    text-align: center;
+}

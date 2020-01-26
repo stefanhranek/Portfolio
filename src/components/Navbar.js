@@ -1,13 +1,17 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
-import './../styles/Navbar.scss';
+import './../styles/App.scss';
 
 export default class Navbar extends Component {
     render() {
         return (
-            <div className="navbarContainer">
-                <h1>This is the Navbar Section.</h1>
-            </div>
+            <nav className="navContainer">
+                <ul>
+                    <li>About</li>
+                    <li>Projects</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
         )
     }
 }

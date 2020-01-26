@@ -1,0 +1,47 @@
+@import 'variables';
+@import 'mixins';
+
+* {
+    color: $mainFont;
+}
+
+.navContainer {
+    @include flexContainer(transparent, row, 10vh, 100vw);
+    position: absolute;
+    justify-content: flex-end;
+    ul {
+        display: flex;
+        justify-content: flex-start;
+        list-style: none;
+        margin: 10vh 5vw 0 0;
+        li {
+            margin: auto 2vw;
+            text-transform: uppercase;
+        }
+    }
+}
+
+.homeContainer {
+    @include flexContainer($homeBackgroundColor, column, 100vh, auto);
+    header {
+        font-size: 3em;
+    }
+    p {
+        letter-spacing: 1.5px;
+    }
+}
+
+.aboutContainer {
+    @include flexContainer($aboutBackgroundColor, column, 100vh, auto);
+    p {
+        @include middleP
+    }
+}
+
+.projectsContainer {
+    @include flexContainer($projectsBackgroundColor, column, 100vh, auto);
+}
+
+.contactContainer {
+    @include flexContainer($contactBackgroundColor, column, 100vh, auto);
+}
