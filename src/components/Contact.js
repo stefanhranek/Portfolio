@@ -5,7 +5,7 @@ import './../styles/App.scss';
 export default class Contact extends Component {
     render() {
         return (
-            <div className="page-section" id="3">
+            <div className="page-section" id="contact">
             <div className="contactContainer">
                 <header>Get in touch.</header>
                 <p>
