@@ -6,9 +6,9 @@ export default class Home extends Component {
     render() {
         return (
             <div className="homeContainer">
-                <header>I'm Stefan.</header>
+                <header>I<h4>'</h4>m Stefan<h5>.</h5></header>
                 <p>
-                    full-stack web developer
+                    full<h6>—</h6>stack web developer
                 </p>
             </div>
         )

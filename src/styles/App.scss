@@ -24,24 +24,49 @@
 .homeContainer {
     @include flexContainer($homeBackgroundColor, column, 100vh, auto);
     header {
-        font-size: 3em;
+        font-size: 8em;
     }
     p {
+        font-size: 2em;
         letter-spacing: 1.5px;
+    }
+    h4 {
+        @include letterColors($aboutBackgroundColor);
+    }
+    h5 {
+        @include letterColors($projectsBackgroundColor);
+    }
+    h6 {
+        @include letterColors($contactBackgroundColor);
     }
 }
 
 .aboutContainer {
     @include flexContainer($aboutBackgroundColor, column, 100vh, auto);
+    header {
+        @include middleHeader;
+    }
     p {
-        @include middleP
+        @include middleP;
     }
 }
 
 .projectsContainer {
     @include flexContainer($projectsBackgroundColor, column, 100vh, auto);
+    header {
+        @include middleHeader;
+    }
+    p {
+        @include middleP;
+    }
 }
 
 .contactContainer {
     @include flexContainer($contactBackgroundColor, column, 100vh, auto);
+    header {
+        @include middleHeader;
+    }
+    p {
+        @include middleP;
+    }
 }

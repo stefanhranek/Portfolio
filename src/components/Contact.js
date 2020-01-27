@@ -6,7 +6,10 @@ export default class Contact extends Component {
     render() {
         return (
             <div className="contactContainer">
-                <h1>This is the Contact Section.</h1>
+                <header>Get in touch.</header>
+                <p>
+                    I'm always open to collaborating and exploring new projects. Have an idea? Need some advice? Shoot me a message. I'd love to help!
+                </p>
             </div>
         )
     }

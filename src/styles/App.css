@@ -61,11 +61,33 @@
 }
 
 .homeContainer header {
-  font-size: 3em;
+  font-size: 8em;
 }
 
 .homeContainer p {
+  font-size: 2em;
   letter-spacing: 1.5px;
+}
+
+.homeContainer h4 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: #4c7c67;
+}
+
+.homeContainer h5 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: #9b3b3b;
+}
+
+.homeContainer h6 {
+  margin: 0;
+  padding: 0;
+  display: inline;
+  color: #484754;
 }
 
 .aboutContainer {
@@ -87,10 +109,16 @@
   width: auto;
 }
 
+.aboutContainer header {
+  font-size: 6em;
+}
+
 .aboutContainer p {
-  width: 40vw;
+  width: 35vw;
   letter-spacing: 1.5px;
   text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 
 .projectsContainer {
@@ -112,6 +140,18 @@
   width: auto;
 }
 
+.projectsContainer header {
+  font-size: 6em;
+}
+
+.projectsContainer p {
+  width: 35vw;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
+}
+
 .contactContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -129,5 +169,17 @@
           flex-direction: column;
   height: 100vh;
   width: auto;
+}
+
+.contactContainer header {
+  font-size: 6em;
+}
+
+.contactContainer p {
+  width: 35vw;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 1.5em;
+  line-height: 1.5em;
 }
 /*# sourceMappingURL=App.css.map */
