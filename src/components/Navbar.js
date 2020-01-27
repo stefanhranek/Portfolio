@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import ReactDOM from 'react-dom';
 import './../styles/App.scss';
 import { Link, animateScroll as scroll } from "react-scroll";
-import $ from 'jquery';
 
 export default class Navbar extends Component {
 
