@@ -10,7 +10,7 @@
 
 .navContainer {
     @include flexContainer(transparent, row, 10vh, 100vw);
-    position: absolute;
+    position: fixed;
     justify-content: flex-end;
     ul {
         display: flex;
