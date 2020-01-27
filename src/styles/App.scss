@@ -103,4 +103,16 @@
     p {
         @include middleP;
     }
+    section {
+        height: auto;
+        width: 30%;
+        display: flex;
+        justify-content: space-between;
+        a {
+            margin: auto;
+            padding: 5% 0 0 0;
+            width: 15%;
+            height: auto;
+        }
+    }
 }
