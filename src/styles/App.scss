@@ -3,7 +3,10 @@
 
 * {
     color: $mainFont;
+    overflow-x: hidden;
+    transition: all .1s ease; 
 }
+
 
 .navContainer {
     @include flexContainer(transparent, row, 10vh, 100vw);
@@ -14,9 +17,12 @@
         justify-content: flex-start;
         list-style: none;
         margin: 10vh 5vw 0 0;
-        li {
+        a {
             margin: auto 2vw;
             text-transform: uppercase;
+            height: 8vh;
+            padding-top: 2vh;
+            text-decoration: none;
         }
     }
 }
@@ -86,7 +92,7 @@
             h1 {
                 margin-top: 15%;
                 margin-bottom: 8%;
-
+                
             }
         }
         .imageBorder {

@@ -5,8 +5,8 @@ import './../styles/App.scss';
 export default class Projects extends Component {
     render() {
         return (
-            <>
-                <div className="projectsContainer">
+            <div className="page-section" id="2">
+                <div className="projectsContainer" id="2">
                     <header>Recent work.</header>
                     <p>
                         Here's a short selection of my most recent projects. <br/>
@@ -36,7 +36,7 @@ export default class Projects extends Component {
                         <img className="imageBorder" src="./../../jumperProject.png" alt="Jumper app image"/>
                     </section>
                 </div>
-            </>
+            </div>
         )
     }
 }

@@ -5,6 +5,7 @@ import './../styles/App.scss';
 export default class Contact extends Component {
     render() {
         return (
+            <div className="page-section" id="3">
             <div className="contactContainer">
                 <header>Get in touch.</header>
                 <p>
@@ -52,11 +53,12 @@ export default class Contact extends Component {
                                     className="contactLogos"
                                     alt="Gmail logo"
                                 />
-                                <h3>Github</h3>
+                                <h3>Gmail</h3>
                             </div>
                         </div>
                     </a> 
                 </section>
+            </div>
             </div>
         )
     }
