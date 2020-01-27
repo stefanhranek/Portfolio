@@ -23,6 +23,7 @@
             height: 8vh;
             padding-top: 2vh;
             text-decoration: none;
+            font-size: 1.1em;
         }
     }
 }
@@ -63,8 +64,19 @@
     p {@include middleP;}
 }
 
+.arrow {
+    display: flex;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    left: 44.5%;
+    top: 275%;
+    width: 10%;
+    height: auto;
+}
+
 .projectsList {
-    @include flexContainer($projectsBackgroundColor, column, 200vh, auto);
+    @include flexContainer($projectsBackgroundColor, column, 165vh, auto);
     section {
         display: flex;
         margin: 5vh auto;
@@ -119,6 +131,7 @@
             padding: 5% 0 0 0;
             width: 15%;
             height: auto;
+            text-decoration: none;
         }
     }
 }

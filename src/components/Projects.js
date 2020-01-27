@@ -13,6 +13,13 @@ export default class Projects extends Component {
                         Tech Stack: React, HTML, CSS, JavaScript, Node.js, Express, MongoDB
                     </p>
                 </div>
+
+                <img
+                    src="./arrowDown.svg"
+                    className="arrow"
+                    alt="Down arrow"
+                />
+
                 <div className="projectsList">
                     <section>
                         <article>
