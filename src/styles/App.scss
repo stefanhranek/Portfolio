@@ -122,3 +122,21 @@
         }
     }
 }
+
+.gmailContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+    margin: 14% auto 0 auto;
+    text-align: center;
+}
+
+.linkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 15vh;
+    margin: 0 auto;
+    text-align: center;
+}

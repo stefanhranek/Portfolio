@@ -28,6 +28,21 @@ export default class Contact extends Component {
                         </div>
                     </a>
                     <a 
+                        href="mailto:hranekstefan@gmail.com?subject=Let's work together! 😊&body=Hey Stefan! My name is Foobar. Would you like to grab a coffee & discuss projects?"
+                        target="_blank"
+                    >
+                        <div>
+                            <div className="gmailContainer">
+                                <img
+                                    src="./gmail.svg"
+                                    className="contactLogos"
+                                    alt="Gmail logo"
+                                />
+                                <h3>Gmail</h3>
+                            </div>
+                        </div>
+                    </a> 
+                    <a 
                         href="https://www.linkedin.com/in/stefanhranek/"
                         target="_blank"
                     >
@@ -42,21 +57,6 @@ export default class Contact extends Component {
                             </div>
                         </div>
                     </a>
-                    <a 
-                        href="mailto:hranekstefan@gmail.com?subject=Let's work together! 😊&body=Hey Stefan! My name is Foobar. Would you like to grab a coffee & discuss projects?"
-                        target="_blank"
-                    >
-                        <div>
-                            <div className="linkContainer">
-                                <img
-                                    src="./gmail.svg"
-                                    className="contactLogos"
-                                    alt="Gmail logo"
-                                />
-                                <h3>Gmail</h3>
-                            </div>
-                        </div>
-                    </a> 
                 </section>
             </div>
             </div>
