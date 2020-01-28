@@ -4,26 +4,32 @@
 * {
   color: $mainFont;
   overflow-x: hidden;
-  
+  overflow-y: auto;
 }
 
 .navContainer {
-  @include flexContainer(transparent, row, 10vh, 100vw);
+  @include flexContainer(transparent, row, auto, 100vw);
   position: fixed;
   justify-content: flex-end;
   ul {
     display: flex;
     justify-content: flex-start;
     list-style: none;
-    margin: 10vh 5vw 0 0;
+    margin: 5vh 5vw 0 0;
+    overflow-y: hidden;
     .navLink {
       margin: auto 1.5vw;
       text-transform: uppercase;
       height: 8vh;
-      padding: 2vh 1vh 1vh 1vh;
+      padding: 2vh 1vh 2vh 1vh;
       text-decoration: none;
-      font-size: 1.1em;
+      font-size: 1.15em;
       cursor: crosshair;
+      transition: $transition;
+      &:hover {
+        transform: scale(1.2);
+        color: papayawhip;
+      }
     }
   }
 }
@@ -68,15 +74,42 @@
   }
 }
 
+.bounce {
+  background: $projectsBackgroundColor;
+}
+
+
+
 .arrow {
-  display: flex;
+  display: relative;
   justify-content: center;
-  background-color: transparent;
+  background-color: $projectsBackgroundColor;
   position: absolute;
-  left: 44.5%;
+  left: 0;
   top: 275%;
-  width: 10%;
-  height: auto;
+  width: 100%;
+  height: 13%;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.25);
+  }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
 }
 
 .projectsList {
@@ -94,7 +127,7 @@
         text-align: left;
       }
       p {
-        @include projectP(auto, auto, auto, 5% 0 0 15%);
+        @include projectP(auto, auto, auto, 5% .8% 0 15%);
       }
     }
     img {

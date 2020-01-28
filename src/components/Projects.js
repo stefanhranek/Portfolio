@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import ReactDOM from "react-dom";
 import "./../styles/App.scss";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 export default class Projects extends Component {
   render() {
@@ -14,9 +15,20 @@ export default class Projects extends Component {
           </p>
         </div>
 
-        <img src="./arrowDown.svg" className="arrow" alt="Down arrow" />
+        <Link 
+            className="navLink"
+            activeClass="active"
+            to="projectsList"
+            spy={true}
+            smooth={true}
+            offset={120}
+            duration= {800}
+        >
+          <img src="./arrowDown.svg" className="arrow bounce" alt="Down arrow" />
+        </Link>
 
-        <div className="projectsList">
+
+        <div className="projectsList" id="projectsList">
           <section>
             <article>
               <h1>Spot Check</h1>
