@@ -45,6 +45,7 @@ export default class Projects extends Component {
           <section>
             <a href="https://m2-deploy-movielog.herokuapp.com/" target="_blank">
               <img
+                className="reversedImage"
                 src="./../../movieLogProject.png"
                 alt="Movie Log app image"
               />

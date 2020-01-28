@@ -130,10 +130,29 @@
         @include projectP(auto, auto, auto, 5% .8% 0 15%);
       }
     }
+    .imageBorder {
+      border: 2px solid white;
+    }
     img {
       margin: 2vh;
       width: 50vw;
       background: $projectsBackgroundTextColor;
+      transition: $transitionProject;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: skewY(.35deg);
+      }
+    }
+    .reversedImage {
+        margin: 2vh;
+        width: 50vw;
+        background: $projectsBackgroundTextColor;
+        transition: $transitionProject;
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+          transform: skewY(-.35deg);
+        }
     }
     .reversedProject {
       margin-left: 3vw;
@@ -142,9 +161,6 @@
         margin-top: 15%;
         margin-bottom: 8%;
       }
-    }
-    .imageBorder {
-      border: 2px solid white;
     }
   }
 }
