@@ -11,12 +11,13 @@ export default class Contact extends Component {
                 <p>
                     I'm always open to collaborating, sharing ideas, and learning new tricks & tips. Have an idea? Need some advice? Want to grab coffee? Shoot me a message. I'd be happy to talk!
                 </p>
-                <section>
+                
+                <section className="bottomContactContainer">
                     <a 
                         href="https://github.com/stefanhranek"
                         target="_blank"
                     >
-                        <div>
+                        <div className="singleLogoContainer">
                             <div className="linkContainer">
                                 <img
                                     src="./github.svg"
@@ -28,10 +29,10 @@ export default class Contact extends Component {
                         </div>
                     </a>
                     <a 
-                        href="mailto:hranekstefan@gmail.com?subject=Let's work together! 😊&body=Hey Stefan! My name is Foobar. Would you like to grab a coffee & discuss projects?"
+                        href="mailto:hranekstefan@gmail.com?subject=Let's work together! 😊&body=Hey Stefan! My name is Foobar. Would you like to grab a coffee and discuss projects?"
                         target="_blank"
                     >
-                        <div>
+                        <div className="singleLogoContainer">
                             <div className="gmailContainer">
                                 <img
                                     src="./gmail.svg"
@@ -46,7 +47,7 @@ export default class Contact extends Component {
                         href="https://www.linkedin.com/in/stefanhranek/"
                         target="_blank"
                     >
-                        <div>
+                        <div className="singleLogoContainer">
                             <div className="linkContainer">
                                 <img
                                     src="./linkedin.svg"
@@ -58,7 +59,9 @@ export default class Contact extends Component {
                         </div>
                     </a>
                 </section>
-            </div>
+            
+                </div>
+            
             </div>
         )
     }

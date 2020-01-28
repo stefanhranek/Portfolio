@@ -174,10 +174,11 @@
     @include middleP;
   }
   section {
-    height: auto;
+    height: 20vh;
     width: 30%;
     display: flex;
     justify-content: space-between;
+
     a {
       margin: auto;
       padding: 5% 0 0 0;
@@ -195,6 +196,7 @@
   height: 15vh;
   margin: 14% auto 0 auto;
   text-align: center;
+  transition: $transitionContact;
 }
 
 .linkContainer {
@@ -204,4 +206,15 @@
   height: 15vh;
   margin: 0 auto;
   text-align: center;
+  transition: $transitionContact;
+  overflow: visible;
+}
+
+.singleLogoContainer {
+  height: auto;
+  width: auto;
+}
+
+.bottomContactContainer {
+  width: 100vw;
 }
