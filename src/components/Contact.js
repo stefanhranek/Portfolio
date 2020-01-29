@@ -33,7 +33,7 @@ export default class Contact extends Component {
                         target="_blank"
                     >
                         <div className="singleLogoContainer">
-                            <div className="gmailContainer">
+                            <div className="linkContainer">
                                 <img
                                     src="./gmail.svg"
                                     className="contactLogos"

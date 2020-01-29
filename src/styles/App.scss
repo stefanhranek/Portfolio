@@ -208,7 +208,8 @@ img {
         transition: $transitionProject;
         &:hover {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-          transform: skewY(-.4deg) scale(1.02);
+          transform: perspective(1300px) rotateX(5deg) rotateY(10deg) 
+          translateZ(20px) scale(1.1);
         }
     }
     .reversedProject {
@@ -246,16 +247,6 @@ img {
   }
 }
 
-.gmailContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  height: 15vh;
-  margin: 14% auto 0 auto;
-  text-align: center;
-  transition: $transitionContact;
-}
-
 .linkContainer {
   display: flex;
   flex-direction: column;
@@ -265,6 +256,11 @@ img {
   text-align: center;
   transition: $transitionContact;
   overflow: visible;
+  &:hover {
+    letter-spacing: 1.01px;
+    transform: perspective(400px) rotateX(5deg) rotateY(10deg) 
+    translateZ(20px) scale(1.1);
+  }
 }
 
 .singleLogoContainer {
