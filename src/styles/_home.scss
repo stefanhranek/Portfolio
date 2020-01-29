@@ -1,10 +1,10 @@
 .homeContainer {
   @include flexContainer($homeBackgroundColor, column, 100vh, auto);
   header {
-    font-size: 4em;
+    font-size: 9em;
   }
   p {
-    font-size: 1.1em;
+    font-size: 2em;
     letter-spacing: 1.5px;
   }
   h4 {
@@ -15,5 +15,31 @@
   }
   span {
     @include letterColors($contactBackgroundColor);
+  }
+}
+
+/////////////////////
+// Mobile Viewport //
+/////////////////////
+
+@media only screen and (max-width: 40em) {
+  .homeContainer {
+    @include flexContainer($homeBackgroundColor, column, 100vh, auto);
+    header {
+      @include mobileHeader;
+    }
+    p {
+      font-size: 1.1em;
+      letter-spacing: 1.5px;
+    }
+    h4 {
+      @include letterColors($aboutBackgroundColor);
+    }
+    h5 {
+      @include letterColors($projectsBackgroundColor);
+    }
+    span {
+      @include letterColors($contactBackgroundColor);
+    }
   }
 }

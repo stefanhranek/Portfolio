@@ -12,6 +12,10 @@
     font-size: 6em;
 }
 
+@mixin mobileHeader {
+    font-size: 4em;
+}
+
 @mixin middleP() {
     width: 35vw;
     letter-spacing: 1.5px;
