@@ -1,5 +1,6 @@
 @import "variables";
 @import "mixins";
+@import "keyframes";
 
 * {
   color: $mainFont;
@@ -148,8 +149,6 @@ img {
   background: $projectsBackgroundColor;
 }
 
-
-
 .arrow {
   display: relative;
   justify-content: center;
@@ -168,42 +167,6 @@ img {
 
 .bounce {
   animation: bounce 2s infinite;
-}
-
-@keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateY(0);
-  }
-  40% {
-    transform: translateY(-30px);
-  }
-  60% {
-    transform: translateY(-15px);
-  }
-}
-
-@keyframes bounceRight {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(-20px);
-  }
-  60% {
-    transform: translateX(-5px);
-  }
-}
-
-@keyframes bounceLeft {
-  0%, 20%, 50%, 80%, 100% {
-    transform: translateX(0);
-  }
-  40% {
-    transform: translateX(20px);
-  }
-  60% {
-    transform: translateX(5px);
-  }
 }
 
 .projectsList {
