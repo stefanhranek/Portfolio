@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './../styles/App.scss';
 
 export default class Contact extends Component {
@@ -16,13 +16,14 @@ export default class Contact extends Component {
                     <a 
                         href="https://github.com/stefanhranek"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <div className="singleLogoContainer">
                             <div className="linkContainer">
                                 <img
                                     src="./github.svg"
                                     className="contactLogos"
-                                    alt="Github logo"
+                                    alt="Github"
                                 />
                                 <h3>Github</h3>
                             </div>
@@ -31,13 +32,14 @@ export default class Contact extends Component {
                     <a 
                         href="mailto:hranekstefan@gmail.com?subject=Let's work together! 😊&body=Hey Stefan! My name is Foobar. Would you like to grab a coffee and discuss projects?"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <div className="singleLogoContainer">
                             <div className="linkContainer">
                                 <img
                                     src="./gmail.svg"
                                     className="contactLogos"
-                                    alt="Gmail logo"
+                                    alt="Gmail"
                                 />
                                 <h3>Gmail</h3>
                             </div>
@@ -46,13 +48,14 @@ export default class Contact extends Component {
                     <a 
                         href="https://www.linkedin.com/in/stefanhranek/"
                         target="_blank"
+                        rel="noopener noreferrer"
                     >
                         <div className="singleLogoContainer">
                             <div className="linkContainer">
                                 <img
                                     src="./linkedin.svg"
                                     className="contactLogos"
-                                    alt="Github logo"
+                                    alt="Github"
                                 />
                                 <h3>LinkedIn</h3>
                             </div>

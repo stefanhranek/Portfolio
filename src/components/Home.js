@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ReactDOM from 'react-dom';
+// import ReactDOM from 'react-dom';
 import './../styles/App.scss';
 
 export default class Home extends Component {
@@ -8,7 +8,7 @@ export default class Home extends Component {
             <div className="homeContainer">
                 <header>I<h4>'</h4>m Stefan<h5>.</h5></header>
                 <p>
-                    full<h6>—</h6>stack web developer
+                    full<span>—</span>stack web developer
                 </p>
             </div>
         )

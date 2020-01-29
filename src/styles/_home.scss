@@ -13,7 +13,7 @@
   h5 {
     @include letterColors($projectsBackgroundColor);
   }
-  h6 {
+  span {
     @include letterColors($contactBackgroundColor);
   }
 }

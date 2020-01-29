@@ -1,7 +1,7 @@
 import React, { Component } from "react";
-import ReactDOM from "react-dom";
+// import ReactDOM from "react-dom";
 import "./../styles/App.scss";
-import { Link, animateScroll as scroll } from "react-scroll";
+import { Link } from "react-scroll";
 
 export default class Projects extends Component {
   render() {
@@ -15,18 +15,21 @@ export default class Projects extends Component {
           </p>
         </div>
 
-        <Link 
-            className="navLink"
-            activeClass="active"
-            to="projectsList"
-            spy={true}
-            smooth={true}
-            offset={120}
-            duration= {800}
+        <Link
+          className="navLink"
+          activeClass="active"
+          to="projectsList"
+          spy={true}
+          smooth={true}
+          offset={120}
+          duration={800}
         >
-          <img src="./arrowDown.svg" className="arrow bounce" alt="Down arrow" />
+          <img
+            src="./arrowDown.svg"
+            className="arrow bounce"
+            alt="Down arrow"
+          />
         </Link>
-
 
         <div className="projectsList" id="projectsList">
           <section>
@@ -34,20 +37,28 @@ export default class Projects extends Component {
               <h1>Spot Check</h1>
               <p>Map-based platform for finding & sharing skate spots.</p>
             </article>
-            <a href="https://spotcheck-react.herokuapp.com/" target="_blank">
+            <a
+              href="https://spotcheck-react.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="imageBorder"
                 src="./../../spotCheckProject.png"
-                alt="Spot Check app image"
+                alt="Spot Check app"
               />
             </a>
           </section>
           <section>
-            <a href="https://m2-deploy-movielog.herokuapp.com/" target="_blank">
+            <a
+              href="https://m2-deploy-movielog.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="reversedImage"
                 src="./../../movieLogProject.png"
-                alt="Movie Log app image"
+                alt="Movie Log app"
               />
             </a>
             <article className="reversedProject">
@@ -66,11 +77,15 @@ export default class Projects extends Component {
                 Nintendo games.
               </p>
             </article>
-            <a href="https://stefanhranek.github.io/jumper/" target="_blank">
+            <a
+              href="https://stefanhranek.github.io/jumper/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <img
                 className="imageBorder"
                 src="./../../jumperProject.png"
-                alt="Jumper app image"
+                alt="Jumper app"
               />
             </a>
           </section>
