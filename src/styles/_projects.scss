@@ -1,0 +1,81 @@
+.projectsContainer {
+  @include flexContainer($projectsBackgroundColor, column, 100vh, auto);
+  header {
+    @include middleHeader;
+  }
+  p {
+    @include middleP;
+  }
+}
+
+.arrow {
+  display: relative;
+  justify-content: center;
+  background-color: transparent;
+  position: absolute;
+  left: 46.5%;
+  top: 275%;
+  width: auto;
+  height: 13%;
+  cursor: pointer;
+  transition: $transition;
+  &:hover {
+    transform: scale(1.25);
+  }
+}
+
+.projectsList {
+  @include flexContainer($projectsBackgroundColor, column, 165vh, auto);
+  section {
+    display: flex;
+    margin: 5vh auto;
+    article {
+      display: flex;
+      flex-direction: column;
+      width: 25vw;
+      margin: 5vh auto;
+      h1 {
+        @include projectHeader(auto, auto, 0, auto);
+        text-align: left;
+      }
+      p {
+        @include projectP(auto, auto, auto, 5% 0.8% 0 15%);
+      }
+    }
+    .imageBorder {
+      border: 2px solid white;
+    }
+    img {
+      margin: 2vh;
+      width: 50vw;
+      background: $projectsBackgroundTextColor;
+      transition: $transitionProject;
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: skewY(0.4deg) scale(1.02);
+      }
+    }
+    .reversedImage {
+      margin: 2vh;
+      width: 50vw;
+      background: $projectsBackgroundTextColor;
+      transition: $transitionProject;
+      &:hover {
+        box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+          0 10px 10px rgba(0, 0, 0, 0.22);
+        transform: perspective(1300px) rotateX(5deg) rotateY(10deg)
+          translateZ(20px) scale(1.1);
+      }
+    }
+    .reversedProject {
+      margin-left: 3vw;
+      height: 50%;
+      h1 {
+        margin-top: 15%;
+        margin-bottom: 8%;
+      }
+    }
+  }
+}

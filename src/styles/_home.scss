@@ -1,0 +1,19 @@
+.homeContainer {
+  @include flexContainer($homeBackgroundColor, column, 100vh, auto);
+  header {
+    font-size: 8em;
+  }
+  p {
+    font-size: 2em;
+    letter-spacing: 1.5px;
+  }
+  h4 {
+    @include letterColors($aboutBackgroundColor);
+  }
+  h5 {
+    @include letterColors($projectsBackgroundColor);
+  }
+  h6 {
+    @include letterColors($contactBackgroundColor);
+  }
+}

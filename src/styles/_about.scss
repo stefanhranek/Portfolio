@@ -1,0 +1,57 @@
+.aboutContainer {
+  @include flexContainer($aboutBackgroundColor, column, 100vh, auto);
+  header {
+    @include middleHeader;
+  }
+  p {
+    @include middleP;
+  }
+}
+
+.AboutDetails {
+  height: auto;
+  width: 35vw;
+  letter-spacing: 1.5px;
+  text-align: center;
+  font-size: 1em;
+  line-height: 1.5em;
+  cursor: pointer;
+}
+
+.slick-prev:before {
+  width: 40px;
+  height: 46px;
+  content: "" !important;
+  position: absolute;
+  top: -11px;
+  left: -71px;
+  background-image: url("./../leftArrow.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: 40px;
+  opacity: 0.5;
+  transition: $transition;
+  &:hover {
+    opacity: 1;
+  }
+  animation: bounceLeft 2.5s infinite;
+}
+
+.slick-next:before {
+  width: 40px;
+  height: 46px;
+  content: "" !important;
+  position: absolute;
+  top: -11px;
+  left: 47px;
+  background-image: url("./../rightArrow.svg");
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: 40px;
+  opacity: 0.5;
+  transition: $transition;
+  &:hover {
+    opacity: 1;
+  }
+  animation: bounceRight 2.5s infinite;
+}
