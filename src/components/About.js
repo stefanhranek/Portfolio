@@ -16,11 +16,6 @@ export default class About extends Component {
           <section className="aboutDetailsWrapper">
             <AboutDetails className="AboutDetails"/>
           </section>
-          {/* <p>
-            I'm a web developer based in San Diego, CA. I have a passion for
-            bringing ideas to life, and especially love creating web & mobile
-            applications.
-          </p> */}
         </div>
       </div>
     );
