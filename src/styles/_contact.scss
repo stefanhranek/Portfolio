@@ -37,3 +37,48 @@
       scale(1.1);
   }
 }
+
+@media only screen and (max-width: 40em) {
+  .contactContainer {
+    @include flexContainer($contactBackgroundColor, column, 100vh, auto);
+    header {
+      font-size: 3.5em;
+    }
+    p {
+      @include mobileP;
+    }
+    section {
+      height: auto;
+      width: 60vw;
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        margin: 0 5% 0 5% ;
+        padding: 0;
+        width: 80%;
+        height: auto;
+        text-decoration: none;
+      }
+    }
+  }
+
+  .linkContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 10vh;
+    margin: 0 10%;
+    text-align: center;
+    transition: $transitionContact;
+    overflow: visible;
+    &:hover {
+      letter-spacing: 1.01px;
+      transform: perspective(400px) rotateX(5deg) rotateY(10deg)
+        translateZ(20px) scale(1.1);
+    }
+    h3 {
+      display: none;
+    }
+  }
+}

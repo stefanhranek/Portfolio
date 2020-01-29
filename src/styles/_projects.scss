@@ -113,7 +113,7 @@
   }
   
   .projectsList {
-    @include flexContainer($projectsBackgroundColor, column, 165vh, auto);
+    @include flexContainer($projectsBackgroundColor, column, 170vh, auto);
     section {
       display: flex;
       flex-direction: column;
