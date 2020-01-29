@@ -79,3 +79,109 @@
     }
   }
 }
+
+/////////////////////
+// Mobile Viewport //
+/////////////////////
+
+@media only screen and (max-width: 40em) {
+  .projectsContainer {
+    @include flexContainer($projectsBackgroundColor, column, 100vh, auto);
+    header {
+      font-size: 3em;
+    }
+    p {
+      @include mobileP;
+    }
+  }
+  
+  .arrow {
+    display: relative;
+    justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    margin: auto 40% auto 40%;
+    top: 280%;
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+    transition: $transition;
+    &:hover {
+      transform: scale(1.25);
+    }
+  }
+  
+  .projectsList {
+    @include flexContainer($projectsBackgroundColor, column, 165vh, auto);
+    section {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+      article {
+        display: flex;
+        flex-direction: row;
+        width: 90vw;
+        margin: 0 auto;
+        justify-content: space-evenly;
+        align-items: center;
+        h1 {
+          width: 30%;
+          height: auto;
+          margin: 2%;
+          padding: 0;
+          font-size: 2em;
+          text-align: left;
+        }
+        p {
+          width: 50%;
+          height: auto;
+          margin: 2%;
+          padding: 0;
+          font-size: 1em;
+          text-align: left;
+        }
+      }
+      .imageBorder {
+        border: 2px solid white;
+      }
+      img {
+        margin: 2vh;
+        width: 90vw;
+        background: $projectsBackgroundTextColor;
+        transition: $transitionProject;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+          transform: skewY(0.4deg) scale(1.02);
+        }
+      }
+      .reversedImage {
+        margin: 0 2vh 2vh 2vh;
+        width: 90vw;
+        background: $projectsBackgroundTextColor;
+        transition: $transitionProject;
+        &:hover {
+          box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
+            0 10px 10px rgba(0, 0, 0, 0.22);
+          transform: perspective(1300px) rotateX(5deg) rotateY(10deg)
+            translateZ(20px) scale(1.1);
+        }
+      }
+      .reversedProject {
+        margin-left: 3vw;
+        height: 50%;
+        h1 {
+          margin-top: 5%;
+          margin-bottom: 8%;
+        }
+      }
+    }
+  }
+  section.movieLogProject {
+    display: flex;
+    flex-direction: column-reverse;
+    margin: 10% auto;
+  }
+}

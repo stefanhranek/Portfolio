@@ -663,6 +663,167 @@
   margin-bottom: 8%;
 }
 
+@media only screen and (max-width: 40em) {
+  .projectsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #9b3b3b;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100vh;
+    width: auto;
+  }
+  .projectsContainer header {
+    font-size: 3em;
+  }
+  .projectsContainer p {
+    width: 50vw;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: .8em;
+    line-height: 1.5em;
+  }
+  .arrow {
+    display: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: transparent;
+    position: absolute;
+    left: 0;
+    margin: auto 40% auto 40%;
+    top: 280%;
+    width: 20%;
+    height: auto;
+    cursor: pointer;
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+  }
+  .arrow:hover {
+    -webkit-transform: scale(1.25);
+            transform: scale(1.25);
+  }
+  .projectsList {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #9b3b3b;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 165vh;
+    width: auto;
+  }
+  .projectsList section {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+  }
+  .projectsList section article {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 90vw;
+    margin: 0 auto;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .projectsList section article h1 {
+    width: 30%;
+    height: auto;
+    margin: 2%;
+    padding: 0;
+    font-size: 2em;
+    text-align: left;
+  }
+  .projectsList section article p {
+    width: 50%;
+    height: auto;
+    margin: 2%;
+    padding: 0;
+    font-size: 1em;
+    text-align: left;
+  }
+  .projectsList section .imageBorder {
+    border: 2px solid white;
+  }
+  .projectsList section img {
+    margin: 2vh;
+    width: 90vw;
+    background: #a34a4a;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+    -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+  .projectsList section img:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -webkit-transform: skewY(0.4deg) scale(1.02);
+            transform: skewY(0.4deg) scale(1.02);
+  }
+  .projectsList section .reversedImage {
+    margin: 0 2vh 2vh 2vh;
+    width: 90vw;
+    background: #a34a4a;
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+  }
+  .projectsList section .reversedImage:hover {
+    -webkit-box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+            box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    -webkit-transform: perspective(1300px) rotateX(5deg) rotateY(10deg) translateZ(20px) scale(1.1);
+            transform: perspective(1300px) rotateX(5deg) rotateY(10deg) translateZ(20px) scale(1.1);
+  }
+  .projectsList section .reversedProject {
+    margin-left: 3vw;
+    height: 50%;
+  }
+  .projectsList section .reversedProject h1 {
+    margin-top: 5%;
+    margin-bottom: 8%;
+  }
+  section.movieLogProject {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    margin: 10% auto;
+  }
+}
+
 /* Effect 17: move up fade out, push border */
 .navHover a {
   color: #10649b;

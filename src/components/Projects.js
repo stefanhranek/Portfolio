@@ -49,7 +49,7 @@ export default class Projects extends Component {
               />
             </a>
           </section>
-          <section>
+          <section  className="movieLogProject">
             <a
               href="https://github.com/stefanhranek/movie-log"
               target="_blank"
