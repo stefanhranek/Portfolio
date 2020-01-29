@@ -24,6 +24,14 @@
     line-height: 1.5em;
 }
 
+@mixin mobileP() {
+    width: 35vw;
+    letter-spacing: 1.5px;
+    text-align: center;
+    font-size: 1.5em;
+    line-height: 1.5em;
+}
+
 @mixin letterColors($color) {
     margin: 0;
     padding: 0;
