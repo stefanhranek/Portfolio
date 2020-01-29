@@ -51,7 +51,7 @@ export default class Projects extends Component {
           </section>
           <section>
             <a
-              href="https://m2-deploy-movielog.herokuapp.com/"
+              href="https://github.com/stefanhranek/movie-log"
               target="_blank"
               rel="noopener noreferrer"
             >
