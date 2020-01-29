@@ -1,10 +1,10 @@
 .homeContainer {
   @include flexContainer($homeBackgroundColor, column, 100vh, auto);
   header {
-    font-size: 8em;
+    font-size: 4em;
   }
   p {
-    font-size: 2em;
+    font-size: 1.1em;
     letter-spacing: 1.5px;
   }
   h4 {
