@@ -54,7 +54,8 @@
       &:hover {
         box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
           0 10px 10px rgba(0, 0, 0, 0.22);
-        transform: skewY(0.4deg) scale(1.02);
+        transform: perspective(900px) rotateX(5deg) rotateY(-10deg)
+          translateZ(20px) scale(1.1);
       }
     }
     .reversedImage {
@@ -95,7 +96,7 @@
       width: 60vw;
     }
   }
-  
+
   .arrow {
     display: relative;
     justify-content: center;
@@ -112,7 +113,7 @@
       transform: scale(1.25);
     }
   }
-  
+
   .projectsList {
     @include flexContainer($projectsBackgroundColor, column, 170vh, auto);
     section {
@@ -151,7 +152,8 @@
         width: 90vw;
         background: $projectsBackgroundTextColor;
         transition: $transitionProject;
-        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+          0 6px 6px rgba(0, 0, 0, 0.23);
         &:hover {
           box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25),
             0 10px 10px rgba(0, 0, 0, 0.22);
