@@ -81,6 +81,7 @@ export default class Projects extends Component {
               href="https://stefanhranek.github.io/jumper/"
               target="_blank"
               rel="noopener noreferrer"
+              className="lastProjectImage"
             >
               <img
                 className="imageBorder"

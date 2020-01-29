@@ -89,7 +89,7 @@
   .projectsContainer {
     @include flexContainer($projectsBackgroundColor, column, 100vh, auto);
     header {
-      font-size: 3em;
+      font-size: 3.3em;
     }
     p {
       @include mobileP;
@@ -115,7 +115,7 @@
   }
 
   .projectsList {
-    @include flexContainer($projectsBackgroundColor, column, 170vh, auto);
+    @include flexContainer($projectsBackgroundColor, column, 125vh, auto);
     section {
       display: flex;
       flex-direction: column;
@@ -186,5 +186,8 @@
     display: flex;
     flex-direction: column-reverse;
     margin: 10% auto;
+  }
+  .lastProjectImage {
+    padding-bottom: 20vh;
   }
 }
