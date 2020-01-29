@@ -197,10 +197,10 @@
   }
   .AboutDetails {
     height: auto;
-    width: 40vw;
+    width: 36vw;
     letter-spacing: 1.5px;
     text-align: center;
-    font-size: .5em;
+    font-size: .6em;
     line-height: 1.5em;
     cursor: pointer;
   }
@@ -221,7 +221,7 @@
     -webkit-animation: bounceLeft 2.5s infinite;
             animation: bounceLeft 2.5s infinite;
   }
-  .slick-prev:before:hover {
+  .slick-prev:before:focus {
     opacity: 1;
   }
   .slick-next:before {
@@ -241,7 +241,7 @@
     -webkit-animation: bounceRight 2.5s infinite;
             animation: bounceRight 2.5s infinite;
   }
-  .slick-next:before:hover {
+  .slick-next:before:focus {
     opacity: 1;
   }
 }
@@ -552,7 +552,7 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    background-color: black;
+    background-color: rgba(0, 0, 0, 0.89);
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -565,6 +565,8 @@
     border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     z-index: 999;
+    -webkit-box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
+            box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
   }
   .navContainer ul {
     margin: 1.4vh 0 auto 0;
@@ -764,6 +766,7 @@
     text-align: center;
     font-size: 1em;
     line-height: 1.5em;
+    width: 60vw;
   }
   .arrow {
     display: relative;

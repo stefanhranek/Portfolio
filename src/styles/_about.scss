@@ -70,10 +70,10 @@
   
   .AboutDetails {
     height: auto;
-    width: 40vw;
+    width: 36vw;
     letter-spacing: 1.5px;
     text-align: center;
-    font-size: .5em;
+    font-size: .6em;
     line-height: 1.5em;
     cursor: pointer;
   }
@@ -91,7 +91,7 @@
     background-size: 40px;
     opacity: 0.5;
     transition: $transition;
-    &:hover {
+    &:focus {
       opacity: 1;
     }
     animation: bounceLeft 2.5s infinite;
@@ -110,7 +110,7 @@
     background-size: 40px;
     opacity: 0.5;
     transition: $transition;
-    &:hover {
+    &:focus {
       opacity: 1;
     }
     animation: bounceRight 2.5s infinite;
