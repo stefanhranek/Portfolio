@@ -3,6 +3,7 @@
 
 * {
   color: $mainFont;
+  cursor: crosshair;
 
 }
 
@@ -23,7 +24,7 @@
       padding: 2vh 1vh 2vh 1vh;
       text-decoration: none;
       font-size: 1.15em;
-      cursor: crosshair;
+      cursor: pointer;
       transition: $transition;
       &:hover {
         transform: scale(1.2);
@@ -92,6 +93,44 @@
   cursor: pointer;
 }
 
+.slick-prev:before {
+  width: 40px;
+  height: 46px;
+  content: '' !important;
+  position: absolute;
+  top: -11px;
+  left: -71px;
+  background-image: url('./../leftArrow.svg');
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: 40px;
+  opacity: .5;
+  transition: $transition;
+  &:hover {
+    opacity: 1;
+  }
+  animation: bounceLeft 2.5s infinite;
+}
+
+.slick-next:before {
+  width: 40px;
+  height: 46px;
+  content: '' !important;
+  position: absolute;
+  top: -11px;
+  left: 47px;
+  background-image: url('./../rightArrow.svg');
+  background-repeat: no-repeat;
+  vertical-align: middle;
+  background-size: 40px;
+  opacity: .5;
+  transition: $transition;
+  &:hover {
+    opacity: 1;
+  }
+  animation: bounceRight 2.5s infinite;
+}
+
 .projectsContainer {
   @include flexContainer($projectsBackgroundColor, column, 100vh, auto);
   header {
@@ -137,6 +176,30 @@
   }
   60% {
     transform: translateY(-15px);
+  }
+}
+
+@keyframes bounceRight {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(-20px);
+  }
+  60% {
+    transform: translateX(-5px);
+  }
+}
+
+@keyframes bounceLeft {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateX(0);
+  }
+  40% {
+    transform: translateX(20px);
+  }
+  60% {
+    transform: translateX(5px);
   }
 }
 
