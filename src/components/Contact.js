@@ -9,7 +9,7 @@ export default class Contact extends Component {
             <div className="contactContainer">
                 <header>Get in touch.</header>
                 <p>
-                    I'm always open to collaborating, sharing ideas, and learning new tricks & tips. Have an idea? Need some advice? Want to grab coffee? Shoot me a message. I'd be happy to talk!
+                    I'm always open to collaborating, sharing ideas, and learning new tricks & tips. Have an idea? Need some advice? Want to grab coffee? Shoot me a message. I'm happy to converse!
                 </p>
                 
                 <section className="bottomContactContainer">
