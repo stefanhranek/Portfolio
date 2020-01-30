@@ -7,7 +7,7 @@ export default class ReactSlickDemo extends Component {
     render() {
         var settings = {
           dots: false,
-          infinite: false,
+          infinite: true,
           speed: 300,
           slidesToShow: 1,
           slidesToScroll: 1
@@ -20,9 +20,9 @@ export default class ReactSlickDemo extends Component {
             <div>
               <p>I also love skateboarding, surfing, rock climbing, scuba diving, table tennis, live music, board games, craft beer, coffee, dogs, and Barcelona ❤</p>
             </div>
-            <div>
+            {/* <div>
               <p>I have also maintained a life-long career of anime-watching. So my ambitious, goofy, empathetic personality can be attributed to that.</p>
-            </div>
+            </div> */}
           </Slider>
         );
       }
