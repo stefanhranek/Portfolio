@@ -2,13 +2,18 @@
   @include flexContainer($aboutBackgroundColor, column, 100vh, auto);
   header {
     @include middleHeader;
+    margin-bottom: 30px;
   }
   p {
     @include middleP;
+    margin-top: 0;
   }
 }
 
 .AboutDetails {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: auto;
   width: 35vw;
   letter-spacing: 1.5px;
@@ -16,6 +21,24 @@
   font-size: 1em;
   line-height: 1.5em;
   cursor: pointer;
+  .anime {
+    width: 40%;
+    display: flex;
+  }
+}
+
+div.slick-track {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.slick-slide img {
+  display: inline-flex;
+  width: 50%;
+  height: 185px;
+  margin: 0;
+
 }
 
 .slick-prev:before {
@@ -78,6 +101,19 @@
     cursor: pointer;
   }
   
+  .slick-slide img {
+    display: inline-flex;
+    width: 100%;
+    height: 85px;
+    margin: 20px 0;
+  
+  }
+
+  .anime {
+    display: flex;
+    flex-direction: column;
+  }
+
   .slick-prev:before {
     width: 40px;
     height: 46px;

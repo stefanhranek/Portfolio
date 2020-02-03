@@ -7,7 +7,7 @@ export default class ReactSlickDemo extends Component {
     render() {
         var settings = {
           dots: false,
-          infinite: true,
+          infinite: false,
           speed: 300,
           slidesToShow: 1,
           slidesToScroll: 1
@@ -15,14 +15,39 @@ export default class ReactSlickDemo extends Component {
         return (
           <Slider {...settings} className="AboutDetails">
             <div >
-              <p>I'm a web developer based in San Diego, California. I truly enjoy seeing ideas come to life, which is why I love creating web & mobile applications.</p>
+              <p>I'm a web developer based in San Diego, California. I find joy in seeing ideas come to life, which is why I love creating web & mobile applications.</p>
             </div>
             <div>
               <p>I also love skateboarding, surfing, rock climbing, scuba diving, table tennis, live music, board games, craft beer, coffee, dogs, and Barcelona ❤</p>
             </div>
-            {/* <div>
-              <p>I have also maintained a life-long career of anime-watching. So my ambitious, goofy, empathetic personality can be attributed to that.</p>
-            </div> */}
+            <div>
+              <p>For visual entertainment, I admire anime. I've spent a huge chunk of my life absorbing it. I draw inspiration from its dream-reaching ideals and beautiful images.</p>
+            </div>
+            <div className='anime'>
+              <img src="https://i.imgur.com/GnPeRFn.gif" alt=""/>
+              <img src="https://data.whicdn.com/images/317355885/original.gif" alt="Spot Check app"/>
+            </div>
+            <div className='anime'>
+              <img src="https://media.giphy.com/media/C4DlSg2161ggE/giphy.gif" alt="Spot Check app"/>
+              <img src="https://media1.tenor.com/images/55555571c2b1fb18701b45f7b82dded4/tenor.gif?itemid=10292229" alt="Spot Check app"/>
+            </div>
+            <div className='anime'>
+              <img src="https://media1.giphy.com/media/b07clVdSOQcSY/giphy.gif" alt="Spot Check app"/>
+              <img src="https://data.whicdn.com/images/296132248/original.gif" alt="Spot Check app"/>
+            </div>
+            <div className='anime'>
+              <img src="https://waterfall.social/images/waterfall_33970c708717ef322c6a68c9f56f51fa8ab68.gif" alt="Spot Check app"/>
+              <img src="https://media3.giphy.com/media/LlCKEq3jr6Eak/source.gif" alt="Spot Check app"/>
+            </div>
+            <div className='anime'>
+              <img src="https://cdn140.picsart.com/259342371009202.gif"/>
+              <img src="https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif" alt="Spot Check app"/>
+            </div>
+
+            <div className='anime'>
+              <img src="https://data.whicdn.com/images/287420878/original.gif" alt="Spot Check app"/>
+              <img src="https://66.media.tumblr.com/9c77690164d7426ce9cceb8158767561/tumblr_nnfwszl4Kk1rnvb0co1_500.gif" alt="Spot Check app"/>
+            </div>
           </Slider>
         );
       }
