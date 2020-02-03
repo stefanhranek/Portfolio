@@ -2,6 +2,7 @@
   @include flexContainer(transparent, row, auto, 100vw);
   position: fixed;
   justify-content: flex-end;
+  z-index: 999;
   ul {
     display: flex;
     justify-content: flex-start;
