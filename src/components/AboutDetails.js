@@ -21,7 +21,7 @@ export default class ReactSlickDemo extends Component {
               <p>I also love skateboarding, surfing, rock climbing, scuba diving, table tennis, live music, board games, craft beer, coffee, dogs, and Barcelona ❤</p>
             </div>
             <div>
-              <p>For visual entertainment, I admire anime. I've spent a huge chunk of my life absorbing it. I draw inspiration from its dream-reaching ideals and beautiful images.</p>
+              <p>I also admire anime. I've spent much of my life absorbing it, and it still makes me feel like I can take on the world. I draw inspiration from its dream-oriented values and beautiful images.</p>
             </div>
             <div className='anime'>
               <img className='leftGif' src="https://i.imgur.com/GnPeRFn.gif" alt="Secret World of Arrietty anime"/>
