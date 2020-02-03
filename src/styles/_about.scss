@@ -119,10 +119,9 @@ img.rightGif {
   
   .slick-slide img {
     display: inline-flex;
-    width: 100%;
+    width: 98%;
     height: 85px;
     margin: 20px 0;
-    border: 2px solid transparent;
   }
 
   .anime {
@@ -131,14 +130,13 @@ img.rightGif {
   }
 
   img.leftGif {
-    border: 20px solid transparent;
-    border-top-left-radius: 50px;
-    border-bottom-left-radius: 5px;
+    border: 2px solid transparent;
+    border-radius: 10px;
   }
-
+  
   img.rightGif {
-    border-top-right-radius: 5px;
-    border-bottom-right-radius: 5px;
+    border: 2px solid transparent;
+    border-radius: 10px;
   }
 
   .slick-prev:before {
