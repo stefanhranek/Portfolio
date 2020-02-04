@@ -44,7 +44,7 @@
   .contactContainer {
     @include flexContainer($contactBackgroundColor, column, 100vh, auto);
     header {
-      font-size: 3.5em;
+      font-size: 3em;
     }
     p {
       @include mobileP;
