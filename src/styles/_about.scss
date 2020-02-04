@@ -104,39 +104,61 @@ img.rightGif {
     @include flexContainer($aboutBackgroundColor, column, 100vh, auto);
     header {
       @include mobileHeader;
+      margin-bottom: 0;
+    }
+    p {
+      width: 42vw;
     }
   }
   
   .AboutDetails {
+    display: inline-flex;
+    justify-content: center;
     height: auto;
-    width: 36vw;
+    width: 75vw;
     letter-spacing: 1.5px;
     text-align: center;
-    font-size: .6em;
+    font-size: .7em;
     line-height: 1.5em;
     cursor: pointer;
+    p {
+      margin: auto;
+      height: auto;
+    }
   }
   
+  .aboutText {
+    display: flex;
+    align-items: center;
+    margin-right: 0;
+  }
+
   .slick-slide img {
     display: inline-flex;
     width: 98%;
-    height: 85px;
-    margin: 20px 0;
+    height: auto;
+    margin: 0;
   }
 
-  .anime {
-    display: flex;
+  div.anime {
+    display: inline-flex !important;
     flex-direction: column;
   }
 
   img.leftGif {
-    border: 2px solid transparent;
-    border-radius: 10px;
+    border: 0px solid transparent;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+
+    margin-top: 10px;
   }
   
   img.rightGif {
-    border: 2px solid transparent;
-    border-radius: 10px;
+    border: 0px solid transparent;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 
   .slick-prev:before {
@@ -144,8 +166,8 @@ img.rightGif {
     height: 46px;
     content: "" !important;
     position: absolute;
-    top: -11px;
-    left: -71px;
+    top: 205px;
+    left: 33px;
     background-image: url("./../leftArrow.svg");
     background-repeat: no-repeat;
     vertical-align: middle;
@@ -163,8 +185,8 @@ img.rightGif {
     height: 46px;
     content: "" !important;
     position: absolute;
-    top: -11px;
-    left: 47px;
+    top: 205px;
+    left: -55px;
     background-image: url("./../rightArrow.svg");
     background-repeat: no-repeat;
     vertical-align: middle;
