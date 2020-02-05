@@ -81,10 +81,7 @@
   }
 }
 
-/////////////////////
 // Mobile Viewport //
-/////////////////////
-
 @media only screen and (max-width: 40em) {
   .projectsContainer {
     @include flexContainer($projectsBackgroundColor, column, 100vh, auto);

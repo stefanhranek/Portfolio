@@ -26,17 +26,14 @@
   }
 }
 
-/////////////////////
 // Mobile Viewport //
-/////////////////////
-
 @media only screen and (max-width: 40em) {
   .navContainer {
     @include flexContainer(rgba(0, 0, 0, 0.89), row, 10vh, 100vw);
     position: fixed;
     justify-content: center;
-    border-bottom:white ridge 1px;
-    border-bottom-left-radius: 5%; 
+    border-bottom: white ridge 1px;
+    border-bottom-left-radius: 5%;
     border-bottom-right-radius: 5%;
     z-index: 999;
     -webkit-box-shadow: 0 3px 2px #777;
@@ -47,7 +44,8 @@
       padding: 0;
       justify-content: center;
       .navLink {
-        margin: auto 4vw ;
+        font-size: 1em;
+        margin: auto 4vw;
         &:focus {
           color: papayawhip;
         }

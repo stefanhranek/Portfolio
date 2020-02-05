@@ -32,7 +32,7 @@ export default class ReactSlickDemo extends Component {
               <img className='rightGif' src="https://media1.tenor.com/images/55555571c2b1fb18701b45f7b82dded4/tenor.gif?itemid=10292229" alt="Ocean Waves anime"/>
             </div>
             <div className='anime'>
-              <img className='leftGif' src="https://media1.giphy.com/media/b07clVdSOQcSY/giphy.gif" alt="Spirited Away anime"/>
+              <img className='leftGif' src="https://i.giphy.com/media/b07clVdSOQcSY/giphy.webp" alt="Spirited Away anime"/>
               <img className='rightGif' src="https://data.whicdn.com/images/296132248/original.gif" alt="Garden of Words anime"/>
             </div>
             <div className='anime'>
@@ -41,7 +41,7 @@ export default class ReactSlickDemo extends Component {
             </div>
             <div className='anime'>
               <img className='leftGif' src="https://cdn140.picsart.com/259342371009202.gif" alt="Ocean Waves anime"/>
-              <img className='rightGif' src="https://media.giphy.com/media/11KzOet1ElBDz2/giphy.gif" alt="Cowboy Bebop anime"/>
+              <img className='rightGif' src="https://i.giphy.com/media/11KzOet1ElBDz2/giphy.webp" alt="Cowboy Bebop anime"/>
             </div>
 
             <div className='anime'>
