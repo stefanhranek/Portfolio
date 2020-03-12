@@ -35,6 +35,26 @@
     margin: 0 auto;
     padding: 30px;
     z-index: 999999;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    section {
+        width: 50%;
+        h1 {
+            font-size: 30px;
+            text-align: center;
+        }
+    }
+    img {
+        width: auto;
+        height: 100%;
+        
+    }
+}
+
+.modalLinkContainer {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .modalLink {
