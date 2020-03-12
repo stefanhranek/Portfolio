@@ -21,14 +21,60 @@ export default class Projects extends Component {
     return (
       <div className="page-section" id="projects">
         <div className="projectsContainer">
-        <button onClick={this.toggleModal}>
-          Open the modal
-        </button>
+          <button onClick={this.toggleModal}>Open the modal</button>
+          <Modal show={this.state.isOpen} onClose={this.toggleModal}>
+            <h1>Spot Check</h1>
+            <h2>Features:</h2>
+              <ul>
+                <li>User authentication with private routes</li>
+                <li>Sign up & Log in</li>
+                <li>Form error feedback</li>
+                <li>Edit user profile</li>
+                <li>Choose point on global map to create a new skate spot</li>
+                <li>View details of skate spot</li>
+                <li>Add existing spots to "Favorites" list</li>
+                <li>Number of user contributions displayed on profile</li>
+                <li>Mobile-first design, fully responsive</li>
+              </ul>
+            <h2>Technologies:</h2>
+              <ul>
+                <li>React</li>
+                <li>JavaScript</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+                <li>CSS</li>
+                <li>REST API</li>
+                <li>Axios</li>
+                <li>Mapbox API</li>
+                <li>Heroku</li>
+              </ul>
+            <a
+              className="modalLink"
+              href="https://github.com/stefanhranek/Spot-Check-Server"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub (Server)
+            </a>
+            <a
+              className="modalLink"
+              href="https://github.com/stefanhranek/Spot-Check-Client"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub (Client)
+            </a>
+            <a
+              className="modalLink"
+              href="https://spotcheck-react.herokuapp.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Deploy
+            </a>
+          </Modal>
 
-        <Modal show={this.state.isOpen}
-          onClose={this.toggleModal}>
-          Here's some content for the modal
-        </Modal>
           <header>Recent work.</header>
           <p>
             Here's a short selection of my most recent projects. <br />
