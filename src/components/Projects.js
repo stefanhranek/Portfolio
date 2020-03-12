@@ -77,7 +77,7 @@ export default class Projects extends Component {
                 </a>
               </div>
             </section>
-            <section>
+            <section className="modalRight">
               <img
                 className="imageBorder"
                 src="./../../spotCheckPhone.png"
