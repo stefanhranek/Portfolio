@@ -88,7 +88,7 @@ export default class Projects extends Component {
           <header>Recent work.</header>
           <p>
             Here's a short selection of my most recent projects. <br />
-            Tech Stack: JavaScript, HTML, CSS, React, Node.js, Express, MongoDB
+            Tech Stack: React, JavaScript, HTML, CSS, React, Node.js, Express, MongoDB
           </p>
         </div>
 
