@@ -3,12 +3,32 @@ import React, { Component } from "react";
 import "./../styles/App.scss";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
+import Modal from "./Modals";
 
 export default class Projects extends Component {
+  constructor(props) {
+    super(props);
+
+    this.state = { isOpen: false };
+  }
+
+  toggleModal = () => {
+    this.setState({
+      isOpen: !this.state.isOpen
+    });
+  };
   render() {
     return (
       <div className="page-section" id="projects">
         <div className="projectsContainer">
+        <button onClick={this.toggleModal}>
+          Open the modal
+        </button>
+
+        <Modal show={this.state.isOpen}
+          onClose={this.toggleModal}>
+          Here's some content for the modal
+        </Modal>
           <header>Recent work.</header>
           <p>
             Here's a short selection of my most recent projects. <br />
