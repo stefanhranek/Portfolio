@@ -21,7 +21,6 @@ export default class Projects extends Component {
     return (
       <div className="page-section" id="projects">
         <div className="projectsContainer">
-          <button onClick={this.toggleModal}>Open the modal</button>
           <Modal show={this.state.isOpen} onClose={this.toggleModal}>
             <section>
               <h1>Spot Check</h1>
@@ -116,17 +115,12 @@ export default class Projects extends Component {
                 <h1>Spot Check</h1>
                 <p>Map-based platform for finding & sharing skate spots.</p>
               </article>
-              <a
-                href="https://spotcheck-react.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
                 <img
+                  onClick={this.toggleModal}
                   className="imageBorder"
                   src="./../../spotCheckProject.png"
                   alt="Spot Check app"
                 />
-              </a>
             </section>
           </Bounce>
 
