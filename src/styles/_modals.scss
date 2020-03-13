@@ -50,6 +50,7 @@
   }
   img {
     height: -webkit-fill-available;
+    cursor: crosshair;
   }
   .modalRight {
     text-align: center;
@@ -66,6 +67,7 @@
   border-radius: 5px;
   padding: 5px;
   margin: 10px;
+  cursor: pointer;
   transition: $transitionContact;
   &:hover {
     transform: scale(1.2);
