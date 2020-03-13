@@ -25,7 +25,7 @@ class Modal extends React.Component {
               <li>View details of skate spot</li>
               <li>Add existing spots to "Favorites" list</li>
               <li>Number of user contributions displayed on profile</li>
-              <li>Mobile-first design, fully responsive</li>
+              <li>Mobile-first design, fully responsive to desktop</li>
             </ul>
             <h2>Technologies:</h2>
             <ul>

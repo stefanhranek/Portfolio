@@ -26,7 +26,7 @@ class ModalMovieLog extends React.Component {
               <li>Add movies to "Seen" or "Want to see" lists</li>
               <li>Profile page displays user's lists, quote, picture</li>
               <li>Edit user's name, email, favorite quote</li>
-              <li>Mobile-first design, fully responsive</li>
+              <li>Mobile-first design, fully responsive to desktop</li>
             </ul>
             <h2>Technologies:</h2>
             <ul>
@@ -64,7 +64,7 @@ class ModalMovieLog extends React.Component {
           <section className="modalRight">
             <img
               className="imageBorder"
-              src="./../../spotCheckPhone.png"
+              src="./../../movieLogModal.png"
               alt="Spot Check app"
             />
           </section>
