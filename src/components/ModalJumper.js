@@ -25,7 +25,7 @@ class ModalJumper extends React.Component {
                 <li>Snowballs and shurikens will decrease lives</li>
                 <li>HTML DOM elements track lives and collectables</li>
                 <li>Background music & various sound effects</li>
-                <li>Three-page transitions: Start, Game, End</li>
+                <li>Four page transitions: Start, Game, Win, Lose</li>
                 <li>Styling inspired by retro games</li>
                 <li>Designed for desktop devices</li>
               </ul>
