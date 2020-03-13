@@ -17,49 +17,43 @@ class ModalMovieLog extends React.Component {
             <h1>Movie Log</h1>
             <h2>Features:</h2>
             <ul>
-              <li>User authentication with private routes</li>
               <li>Sign up & Log in</li>
+              <li>User authentication with private routes</li>
               <li>Form error feedback</li>
-              <li>Edit user profile</li>
-              <li>Choose point on global map to create a new skate spot</li>
-              <li>View details of skate spot</li>
-              <li>Add existing spots to "Favorites" list</li>
-              <li>Number of user contributions displayed on profile</li>
+              <li>Home page contains "Now Playing", "Upcoming", "Trending" movie sections</li>
+              <li>Search for movies based off title</li>
+              <li>View movie details: Title, Year, Genres, Run-time, Rating, Synopsis, Director</li>
+              <li>Add movies to "Seen" or "Want to see" lists</li>
+              <li>Profile page displays user's lists, quote, picture</li>
+              <li>Edit user's name, email, favorite quote</li>
               <li>Mobile-first design, fully responsive</li>
             </ul>
             <h2>Technologies:</h2>
             <ul>
-              <li>React</li>
               <li>JavaScript</li>
+              <li>Handlebars</li>
               <li>Node.js</li>
               <li>Express</li>
               <li>MongoDB</li>
               <li>CSS</li>
               <li>REST API</li>
               <li>Axios</li>
-              <li>Mapbox API</li>
+              <li>Postman</li>
+              <li>The Movie Database (TMDb) API</li>
               <li>Heroku</li>
             </ul>
             <div className="modalLinkContainer">
               <a
                 className="modalLink"
-                href="https://github.com/stefanhranek/Spot-Check-Client"
+                href="https://github.com/stefanhranek/movie-log"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                GitHub (Client)
+                GitHub
               </a>
               <a
                 className="modalLink"
-                href="https://github.com/stefanhranek/Spot-Check-Server"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                GitHub (Server)
-              </a>
-              <a
-                className="modalLink"
-                href="https://spotcheck-react.herokuapp.com/"
+                href="https://m2-deploy-movielog.herokuapp.com/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
