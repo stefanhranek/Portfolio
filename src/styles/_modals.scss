@@ -84,3 +84,17 @@
     transform: scale(1.4);
   }
 }
+
+@media only screen and (max-width: 40em) {
+  .modal {
+    top: 3%;
+    min-width: 280px;
+    min-height: 560px;
+    section {
+      width: 100%;
+    }
+    .modalRight {
+      display: none;
+    }
+  }
+}
