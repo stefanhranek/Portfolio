@@ -59,8 +59,9 @@ class ModalJumper extends React.Component {
             </section>
             <section className="modalRight">
               <img
+                style={{transform: 'scale(0.9)', borderRadius:'20px'}}
                 className="imageBorder"
-                src="./../../spotCheckPhone.png"
+                src="./../../3.png"
                 alt="Spot Check app"
               />
             </section>
