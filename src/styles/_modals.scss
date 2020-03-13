@@ -79,4 +79,8 @@
   position: absolute;
   top: 30px;
   right: 30px;
+  transition: $transitionContact;
+  &:hover {
+    transform: scale(1.4);
+  }
 }
