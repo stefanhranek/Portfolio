@@ -4,12 +4,18 @@ import "./../styles/App.scss";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
 import Modal from "./Modals";
+import ModalMovieLog from "./ModalMovieLog";
+import ModalJumper from "./ModalJumper";
 
 export default class Projects extends Component {
   constructor(props) {
     super(props);
 
-    this.state = { isOpen: false };
+    this.state = { 
+      isOpen: false,
+      isOpenMovieModal: false,
+      isOpenJumperModal: false
+     };
   }
 
   toggleModal = () => {
@@ -17,18 +23,32 @@ export default class Projects extends Component {
       isOpen: !this.state.isOpen
     });
   };
+
+  toggleModalMovieLog = () => {
+    this.setState({
+      isOpenMovieModal: !this.state.isOpenMovieModal
+    });
+  };
+
+  toggleModalJumper = () => {
+    this.setState({
+      isOpenJumperModal: !this.state.isOpenJumperModal
+    });
+  };
+
   render() {
     return (
       <div className="page-section" id="projects">
         <div className="projectsContainer">
-          <Modal show={this.state.isOpen} onClose={this.toggleModal}>
-
-          </Modal>
+          <Modal show={this.state.isOpen} onClose={this.toggleModal}></Modal>
+          <ModalMovieLog show={this.state.isOpenMovieModal} onClose={this.toggleModalMovieLog}></ModalMovieLog>
+          <ModalJumper show={this.state.isOpenJumperModal} onClose={this.toggleModalJumper}></ModalJumper>
 
           <header>Recent work.</header>
           <p>
             Here's a short selection of my most recent projects. <br />
-            Tech Stack: React, JavaScript, HTML, CSS, React, Node.js, Express, MongoDB
+            Tech Stack: React, JavaScript, HTML, CSS, React, Node.js, Express,
+            MongoDB
           </p>
         </div>
 
@@ -55,28 +75,23 @@ export default class Projects extends Component {
                 <h1>Spot Check</h1>
                 <p>Map-based platform for finding & sharing skate spots.</p>
               </article>
-                <img
-                  onClick={this.toggleModal}
-                  className="imageBorder"
-                  src="./../../spotCheckProject.png"
-                  alt="Spot Check app"
-                />
+              <img
+                onClick={this.toggleModal}
+                className="imageBorder"
+                src="./../../spotCheckProject.png"
+                alt="Spot Check app"
+              />
             </section>
           </Bounce>
 
           <Bounce right>
             <section className="movieLogProject">
-              <a
-                href="https://m2-deploy-movielog.herokuapp.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  className="reversedImage"
-                  src="./../../movieLogProject.png"
-                  alt="Movie Log app"
-                />
-              </a>
+              <img
+                onClick={this.toggleModalMovieLog}
+                className="reversedImage"
+                src="./../../movieLogProject.png"
+                alt="Movie Log app"
+              />
               <article className="reversedProject">
                 <h1>Movie Log</h1>
                 <p>
@@ -96,18 +111,12 @@ export default class Projects extends Component {
                   Nintendo games.
                 </p>
               </article>
-              <a
-                href="https://stefanhranek.github.io/jumper/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="lastProjectImage"
-              >
-                <img
-                  className="imageBorder"
-                  src="./../../jumperProject.png"
-                  alt="Jumper app"
-                />
-              </a>
+              <img
+                onClick={this.toggleModalJumper}
+                className="imageBorder"
+                src="./../../jumperProject.png"
+                alt="Jumper app"
+              />
             </section>
           </Bounce>
         </div>
