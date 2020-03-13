@@ -10,12 +10,29 @@ import ModalJumper from "./ModalJumper";
 export default class Projects extends Component {
   constructor(props) {
     super(props);
+    this.escFunction = this.escFunction.bind(this);
 
-    this.state = { 
+    this.state = {
       isOpen: false,
       isOpenMovieModal: false,
       isOpenJumperModal: false
-     };
+    };
+  }
+  escFunction(event) {
+    if (event.keyCode === 27 && this.state.isOpen) {
+      this.toggleModal();
+    } else if (event.keyCode === 27 && this.state.isOpenMovieModal) {
+      this.toggleModalMovieLog();
+    } else if (event.keyCode === 27 && this.state.isOpenJumperModal) {
+      this.toggleModalJumper();
+    }
+  }
+
+  componentDidMount() {
+    document.addEventListener("keydown", this.escFunction, false);
+  }
+  componentWillUnmount() {
+    document.removeEventListener("keydown", this.escFunction, false);
   }
 
   toggleModal = () => {
@@ -41,8 +58,14 @@ export default class Projects extends Component {
       <div className="page-section" id="projects">
         <div className="projectsContainer">
           <Modal show={this.state.isOpen} onClose={this.toggleModal}></Modal>
-          <ModalMovieLog show={this.state.isOpenMovieModal} onClose={this.toggleModalMovieLog}></ModalMovieLog>
-          <ModalJumper show={this.state.isOpenJumperModal} onClose={this.toggleModalJumper}></ModalJumper>
+          <ModalMovieLog
+            show={this.state.isOpenMovieModal}
+            onClose={this.toggleModalMovieLog}
+          ></ModalMovieLog>
+          <ModalJumper
+            show={this.state.isOpenJumperModal}
+            onClose={this.toggleModalJumper}
+          ></ModalJumper>
 
           <header>Recent work.</header>
           <p>
