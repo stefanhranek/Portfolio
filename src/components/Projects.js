@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import ReactDOM from "react-dom";
 import "./../styles/App.scss";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
@@ -10,13 +9,12 @@ import ModalJumper from "./ModalJumper";
 export default class Projects extends Component {
   constructor(props) {
     super(props);
-    this.escFunction = this.escFunction.bind(this);
-
     this.state = {
       isOpen: false,
       isOpenMovieModal: false,
       isOpenJumperModal: false
     };
+    this.escFunction = this.escFunction.bind(this);
   }
   escFunction(event) {
     if (event.keyCode === 27 && this.state.isOpen) {
