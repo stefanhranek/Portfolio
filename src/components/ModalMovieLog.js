@@ -20,9 +20,15 @@ class ModalMovieLog extends React.Component {
               <li>Sign up & Log in</li>
               <li>User authentication with private routes</li>
               <li>Form error feedback</li>
-              <li>Home page contains "Now Playing", "Upcoming", "Trending" movie sections</li>
+              <li>
+                Home page contains "Now Playing", "Upcoming", "Trending" movie
+                sections
+              </li>
               <li>Search for movies based off title</li>
-              <li>View movie details: Title, Year, Genres, Run-time, Rating, Synopsis, Director</li>
+              <li>
+                View movie details: Title, Year, Genres, Run-time, Rating,
+                Synopsis, Director
+              </li>
               <li>Add movies to "Seen" or "Want to see" lists</li>
               <li>Profile page displays user's lists, quote, picture</li>
               <li>Edit user's name, email, favorite quote</li>
@@ -69,9 +75,13 @@ class ModalMovieLog extends React.Component {
             />
           </section>
           <div className="footer">
-            <button className="modalEscapeButton" onClick={this.props.onClose}>
-              Close
-            </button>
+            <img
+              className="modalEscapeButton"
+              onClick={this.props.onClose}
+              style={{ height: "24px", background: "transparent" }}
+              src="./../../close.svg"
+              alt="close modal"
+            />
           </div>
         </div>
       </div>

@@ -75,9 +75,13 @@ class Modal extends React.Component {
             />
           </section>
           <div className="footer">
-            <button className="modalEscapeButton" onClick={this.props.onClose}>
-              Close
-            </button>
+            <img
+              className="modalEscapeButton"
+              onClick={this.props.onClose}
+              style={{ height: "24px", background: "transparent" }}
+              src="./../../close.svg"
+              alt="close modal"
+            />
           </div>
         </div>
       </div>

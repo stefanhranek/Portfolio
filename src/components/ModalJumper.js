@@ -59,16 +59,14 @@ class ModalJumper extends React.Component {
             </section>
             <section className="modalRight">
               <img
-                style={{transform: 'scale(0.9)', borderRadius:'20px'}}
+                style={{transform: 'scale(0.9)', borderRadius:'60px'}}
                 className="imageBorder"
                 src="./../../3.png"
                 alt="Spot Check app"
               />
             </section>
             <div className="footer">
-              <button className="modalEscapeButton" onClick={this.props.onClose}>
-                Close
-              </button>
+                <img className="modalEscapeButton" onClick={this.props.onClose} style={{height:'24px', background:'transparent'}} src="./../../close.svg" alt="close modal"/>
             </div>
           </div>
         </div>
