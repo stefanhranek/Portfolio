@@ -17,49 +17,39 @@ class ModalJumper extends React.Component {
               <h1>Jumper</h1>
               <h2>Features:</h2>
               <ul>
-                <li>User authentication with private routes</li>
-                <li>Sign up & Log in</li>
-                <li>Form error feedback</li>
-                <li>Edit user profile</li>
-                <li>Choose point on global map to create a new skate spot</li>
-                <li>View details of skate spot</li>
-                <li>Add existing spots to "Favorites" list</li>
-                <li>Number of user contributions displayed on profile</li>
-                <li>Mobile-first design, fully responsive</li>
+                <li>Left & right movement</li>
+                <li>Jump / fly up to platforms</li>
+                <li>Player has three lives</li>
+                <li>Collect coins and "dragon balls"</li>
+                <li>Win upon reaching "Master Roshi"</li>
+                <li>Snowballs and shurikens will decrease lives</li>
+                <li>HTML DOM elements track lives and collectables</li>
+                <li>Background music & various sound effects</li>
+                <li>Three-page transitions: Start, Game, End</li>
+                <li>Styling inspired by retro games</li>
+                <li>Designed for desktop devices</li>
               </ul>
               <h2>Technologies:</h2>
               <ul>
-                <li>React</li>
                 <li>JavaScript</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
+                <li>Canvas</li>
+                <li>HTML</li>
                 <li>CSS</li>
-                <li>REST API</li>
-                <li>Axios</li>
-                <li>Mapbox API</li>
-                <li>Heroku</li>
+                <li>GitHub Pages</li>
+                <li>Piskel (Pixel Art)</li>
               </ul>
               <div className="modalLinkContainer">
                 <a
                   className="modalLink"
-                  href="https://github.com/stefanhranek/Spot-Check-Client"
+                  href="https://github.com/stefanhranek/jumper"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  GitHub (Client)
+                  GitHub
                 </a>
                 <a
                   className="modalLink"
-                  href="https://github.com/stefanhranek/Spot-Check-Server"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  GitHub (Server)
-                </a>
-                <a
-                  className="modalLink"
-                  href="https://spotcheck-react.herokuapp.com/"
+                  href="https://stefanhranek.github.io/jumper/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
