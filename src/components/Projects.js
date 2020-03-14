@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./../styles/App.scss";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
-import Modal from "./Modals";
+import ModalSpotCheck from "./ModalSpotCheck";
 import ModalMovieLog from "./ModalMovieLog";
 import ModalJumper from "./ModalJumper";
 
@@ -10,15 +10,15 @@ export default class Projects extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      isOpen: false,
+      isOpenSpotModal: false,
       isOpenMovieModal: false,
       isOpenJumperModal: false
     };
     this.escFunction = this.escFunction.bind(this);
   }
   escFunction(event) {
-    if (event.keyCode === 27 && this.state.isOpen) {
-      this.toggleModal();
+    if (event.keyCode === 27 && this.state.isOpenSpotModal) {
+      this.toggleModalSpotCheck();
     } else if (event.keyCode === 27 && this.state.isOpenMovieModal) {
       this.toggleModalMovieLog();
     } else if (event.keyCode === 27 && this.state.isOpenJumperModal) {
@@ -33,9 +33,9 @@ export default class Projects extends Component {
     document.removeEventListener("keydown", this.escFunction, false);
   }
 
-  toggleModal = () => {
+  toggleModalSpotCheck = () => {
     this.setState({
-      isOpen: !this.state.isOpen
+      isOpenSpotModal: !this.state.isOpenSpotModal
     });
   };
 
@@ -55,7 +55,7 @@ export default class Projects extends Component {
     return (
       <div className="page-section" id="projects">
         <div className="projectsContainer">
-          <Modal show={this.state.isOpen} onClose={this.toggleModal}></Modal>
+          <ModalSpotCheck show={this.state.isOpenSpotModal} onClose={this.toggleModalSpotCheck}></ModalSpotCheck>
           <ModalMovieLog
             show={this.state.isOpenMovieModal}
             onClose={this.toggleModalMovieLog}
@@ -97,7 +97,7 @@ export default class Projects extends Component {
                 <p>Map-based platform for finding & sharing skate spots.</p>
               </article>
               <img
-                onClick={this.toggleModal}
+                onClick={this.toggleModalSpotCheck}
                 className="imageBorder"
                 src="./../../spotCheckProject.png"
                 alt="Spot Check app"

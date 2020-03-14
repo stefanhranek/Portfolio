@@ -2,7 +2,7 @@ import React from "react";
 import "./../styles/App.scss";
 import PropTypes from "prop-types";
 
-class Modal extends React.Component {
+class ModalSpotCheck extends React.Component {
   render() {
     // Render nothing if the "show" prop is false
     if (!this.props.show) {
@@ -89,10 +89,10 @@ class Modal extends React.Component {
   }
 }
 
-Modal.propTypes = {
+ModalSpotCheck.propTypes = {
   onClose: PropTypes.func.isRequired,
   show: PropTypes.bool,
   children: PropTypes.node
 };
 
-export default Modal;
+export default ModalSpotCheck;
