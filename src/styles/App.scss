@@ -2,8 +2,8 @@
   "projects", "navHover", "modals";
 
   @font-face {
-    src: url(../fonts/Cunia-webfont.woff);
-    font-family: cunia;
+    src: url(../fonts/Romanson-Regular.ttf);
+    font-family: romanson;
   }
 
   @font-face {
@@ -14,6 +14,8 @@
 * {
   color: $mainFont;
   cursor: crosshair;
+  font-family: romanson;
+
 }
 
 img {
