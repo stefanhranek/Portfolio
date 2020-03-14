@@ -128,8 +128,8 @@ export default class Projects extends Component {
               <article>
                 <h1>Jumper</h1>
                 <p>
-                  2D JavaScript platformer game inspired by my favorite Super
-                  Nintendo games.
+                  2D JavaScript platformer game inspired by Super
+                  Mario.
                 </p>
               </article>
               <img
