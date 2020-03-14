@@ -1,6 +1,16 @@
 @import "variables", "mixins", "keyframes", "about", "contact", "home", "navbar",
   "projects", "navHover", "modals";
 
+  @font-face {
+    src: url(../fonts/Cunia-webfont.woff);
+    font-family: cunia;
+  }
+
+  @font-face {
+    src: url(../fonts/Sunflower.otf);
+    font-family: sunflower;
+  }
+
 * {
   color: $mainFont;
   cursor: crosshair;
@@ -12,4 +22,13 @@ img {
 
 .bounce {
   animation: bounce 2s infinite;
+}
+
+header {
+  font-family: sunflower;
+}
+
+h1 {
+  font-family: sunflower;
+  letter-spacing: 1.2px;
 }
