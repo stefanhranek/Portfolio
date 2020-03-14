@@ -36,7 +36,7 @@ export default class Contact extends Component {
 
             <Fade bottom>
               <a
-                href="mailto:hranekstefan@gmail.com?subject=Let's work together! 😊&body=Hey Stefan! My name is Foobar. Would you like to grab a coffee and discuss projects?"
+                href="mailto:hranekstefan@gmail.com?subject=Just viewed your portfolio! 😊&body=Hey Stefan! ... "
                 target="_blank"
                 rel="noopener noreferrer"
               >
