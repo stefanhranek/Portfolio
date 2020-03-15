@@ -23,7 +23,7 @@
 // Mobile Viewport //
 /////////////////////
 
-@media only screen and (max-width: 40em) {
+@media only screen and (max-width: 47em) {
   .homeContainer {
     @include flexContainer($homeBackgroundColor, column, 100vh, auto);
     header {

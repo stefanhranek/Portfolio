@@ -109,8 +109,8 @@ export default class Projects extends Component {
             <section className="movieLogProject">
               <img
                 onClick={this.toggleModalMovieLog}
-                className="reversedImage"
-                src="./../../movieLogProject.png"
+                className="reversedImage imageBorder"
+                src="./../../movieLogProjects.png"
                 alt="Movie Log app"
               />
               <article className="reversedProject">
