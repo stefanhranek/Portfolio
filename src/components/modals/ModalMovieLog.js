@@ -1,5 +1,5 @@
 import React from "react";
-import "./../styles/App.scss";
+import "./../../styles/App.scss";
 import PropTypes from "prop-types";
 
 class ModalMovieLog extends React.Component {

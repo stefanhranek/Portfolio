@@ -2,9 +2,9 @@ import React, { Component } from "react";
 import "./../styles/App.scss";
 import Bounce from "react-reveal/Bounce";
 import { Link } from "react-scroll";
-import ModalSpotCheck from "./ModalSpotCheck";
-import ModalMovieLog from "./ModalMovieLog";
-import ModalJumper from "./ModalJumper";
+import ModalSpotCheck from "./modals/ModalSpotCheck";
+import ModalMovieLog from "./modals/ModalMovieLog";
+import ModalJumper from "./modals/ModalJumper";
 
 export default class Projects extends Component {
   constructor(props) {
