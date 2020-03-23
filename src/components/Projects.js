@@ -140,6 +140,24 @@ export default class Projects extends Component {
               />
             </section>
           </Bounce>
+
+
+          <Bounce right>
+            <section className="movieLogProject">
+              <img
+                onClick={this.toggleModalMovieLog}
+                className="reversedImage imageBorder grayScale"
+                src="./../../stefco2.png"
+                alt="digital agency website"
+              />
+              <article className="reversedProject">
+                <h1>Stefco</h1>
+                <p>
+                  Digital agency website, created using a design from Dribbble.
+                </p>
+              </article>
+            </section>
+          </Bounce>
         </div>
       </div>
     );

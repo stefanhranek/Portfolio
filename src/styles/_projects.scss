@@ -70,6 +70,9 @@
           translateZ(20px) scale(1.1);
       }
     }
+    .grayScale {
+      filter: grayscale(1);
+    }
     .reversedProject {
       margin-left: 3vw;
       height: 50%;
