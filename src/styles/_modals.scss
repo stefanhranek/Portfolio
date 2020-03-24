@@ -97,11 +97,12 @@
 
 @media only screen and (max-width: 40em) {
   .modal {
-    top: 3%;
+    top: 1%;
     min-width: 280px;
     min-height: 560px;
     section {
       width: 100%;
+      font-size: 12px;
     }
     .modalRight {
       display: none;

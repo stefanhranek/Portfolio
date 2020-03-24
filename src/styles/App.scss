@@ -11,6 +11,11 @@
     font-family: sunflower;
   }
 
+  @font-face {
+    src: url(../fonts/salome-webfont.ttf);
+    font-family: salome;
+  }
+
 * {
   color: $mainFont;
   cursor: crosshair;
