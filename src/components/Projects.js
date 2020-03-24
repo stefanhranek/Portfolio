@@ -5,6 +5,7 @@ import { Link } from "react-scroll";
 import ModalSpotCheck from "./modals/ModalSpotCheck";
 import ModalMovieLog from "./modals/ModalMovieLog";
 import ModalJumper from "./modals/ModalJumper";
+import ModalStefco from "./modals/ModalStefco";
 
 export default class Projects extends Component {
   constructor(props) {
@@ -12,7 +13,8 @@ export default class Projects extends Component {
     this.state = {
       isOpenSpotModal: false,
       isOpenMovieModal: false,
-      isOpenJumperModal: false
+      isOpenJumperModal: false,
+      isOpenStefcoModal: false
     };
     this.escFunction = this.escFunction.bind(this);
   }
@@ -23,6 +25,8 @@ export default class Projects extends Component {
       this.toggleModalMovieLog();
     } else if (event.keyCode === 27 && this.state.isOpenJumperModal) {
       this.toggleModalJumper();
+    } else if (event.keyCode === 27 && this.state.isOpenStefcoModal) {
+      this.toggleModalStefco();
     }
   }
 
@@ -51,11 +55,20 @@ export default class Projects extends Component {
     });
   };
 
+  toggleModalStefco = () => {
+    this.setState({
+      isOpenStefcoModal: !this.state.isOpenStefcoModal
+    });
+  };
+
   render() {
     return (
       <div className="page-section" id="projects">
         <div className="projectsContainer">
-          <ModalSpotCheck show={this.state.isOpenSpotModal} onClose={this.toggleModalSpotCheck}></ModalSpotCheck>
+          <ModalSpotCheck
+            show={this.state.isOpenSpotModal}
+            onClose={this.toggleModalSpotCheck}
+          ></ModalSpotCheck>
           <ModalMovieLog
             show={this.state.isOpenMovieModal}
             onClose={this.toggleModalMovieLog}
@@ -64,6 +77,10 @@ export default class Projects extends Component {
             show={this.state.isOpenJumperModal}
             onClose={this.toggleModalJumper}
           ></ModalJumper>
+          <ModalStefco
+            show={this.state.isOpenStefcoModal}
+            onClose={this.toggleModalStefco}
+          ></ModalStefco>
 
           <header>Recent work.</header>
           <p>
@@ -127,10 +144,7 @@ export default class Projects extends Component {
             <section>
               <article>
                 <h1>Jumper</h1>
-                <p>
-                  2D JavaScript platformer game inspired by Super
-                  Mario.
-                </p>
+                <p>2D JavaScript platformer game inspired by Super Mario.</p>
               </article>
               <img
                 onClick={this.toggleModalJumper}
@@ -141,11 +155,10 @@ export default class Projects extends Component {
             </section>
           </Bounce>
 
-
           <Bounce right>
             <section className="movieLogProject">
               <img
-                onClick={this.toggleModalMovieLog}
+                onClick={this.toggleModalStefco}
                 className="reversedImage imageBorder grayScale"
                 src="./../../stefco2.png"
                 alt="digital agency website"
