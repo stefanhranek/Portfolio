@@ -15,13 +15,10 @@ export default class ReactSlickDemo extends Component {
         return (
           <Slider {...settings} className="AboutDetails">
             <div className="aboutText">
-              <p>I'm a web developer based in San Diego, California. I find joy in seeing ideas come to life, which is why I love creating web & mobile applications.</p>
+              <p>I'm a web developer based in San Diego, California. I create web & mobile applications, but building websites is what I enjoy the most.</p>
             </div>
             <div className="aboutText">
-              <p>I love skateboarding - much of my free time goes to that. Other interests: surfing, climbing, scuba diving, table tennis, live music, board games, coffee, dogs, and Barcelona ❤</p>
-            </div>
-            <div className="aboutText">
-              <p>I also admire anime. I've spent much of my life absorbing it, and it still makes me feel like I can take on the world. I draw inspiration from its dream-oriented nature and beautiful imagery.</p>
+              <p>Outside of web development, I spend majority of my time surfing, skateboarding, being in nature, and appreciating anime.</p>
             </div>
             <div className='anime'>
               <img className='leftGif' src="https://i.imgur.com/GnPeRFn.gif" alt="Secret World of Arrietty anime"/>
