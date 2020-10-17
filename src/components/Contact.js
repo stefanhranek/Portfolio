@@ -10,8 +10,7 @@ export default class Contact extends Component {
         <div className="contactContainer">
           <header>Get in touch.</header>
           <p>
-            I'm always open to collaborating, sharing ideas, and learning new
-            tricks & tips. If you'd like to hire me, or you have questions, send me an email!
+            I'm always interested in working on new projects. If you'd like to hire me, or you have any questions, shoot me an email!
           </p>
 
           <section className="bottomContactContainer">
