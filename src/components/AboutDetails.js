@@ -18,7 +18,7 @@ export default class ReactSlickDemo extends Component {
               <p>I'm a web developer based in San Diego, California. I create web & mobile applications, but building websites is what I enjoy the most.</p>
             </div>
             <div className="aboutText">
-              <p>Outside of web development, I spend majority of my time surfing, skateboarding, being in nature, and appreciating anime.</p>
+              <p>Outside of web development, I spend majority of my time surfing, cycling, skateboarding, nature hiking, and triathlon training.</p>
             </div>
             <div className='anime'>
               <img className='leftGif' src="https://i.imgur.com/GnPeRFn.gif" alt="Secret World of Arrietty anime"/>
@@ -33,7 +33,7 @@ export default class ReactSlickDemo extends Component {
               <img className='rightGif' src="https://data.whicdn.com/images/296132248/original.gif" alt="Garden of Words anime"/>
             </div>
             <div className='anime'>
-              <img className='leftGif' src="https://waterfall.social/images/waterfall_33970c708717ef322c6a68c9f56f51fa8ab68.gif" alt="Akira anime"/>
+              <img className='leftGif' src="https://thumbs.gfycat.com/AdorableDecentAmericanquarterhorse-size_restricted.gif" alt="Akira anime"/>
               <img className='rightGif' src="https://media3.giphy.com/media/LlCKEq3jr6Eak/source.gif" alt="Spirited Away anime"/>
             </div>
             <div className='anime'>

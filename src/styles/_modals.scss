@@ -53,8 +53,10 @@
     }
   }
   img {
-    height: -webkit-fill-available;
     cursor: crosshair;
+    max-height: 50%;
+    max-width: 65%;
+
   }
   .modalRight {
     text-align: center;
